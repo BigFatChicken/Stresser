@@ -3,8 +3,9 @@ import os, sys
 import time
 import multiprocessing, random
 
-ip = "88.198.18.78"
-port = int("80")
+print("Welcome To DarkMatter DDoS")
+ip = sys.argv[1]
+port = int(sys.argv[2])
 
 url = "http://" + str(ip)
 

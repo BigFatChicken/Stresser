@@ -10,14 +10,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/BigFatChicken/Images">
+    <img src="Stresser/Logo.png" alt="BigFatChicken Stresser" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Powerful Layer 7 Stresser</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A python script that can send 500K to 10M HTTP Requests
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />

